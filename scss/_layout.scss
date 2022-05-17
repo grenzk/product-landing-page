@@ -6,10 +6,10 @@
     font-size: var(--h2-font-size);
     margin-bottom: var(--mb-2);
     line-height: 140%;
-  }
 
-  &__title-center {
-    text-align: center;
+    &-center {
+      text-align: center;
+    }
   }
 }
 
