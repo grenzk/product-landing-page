@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 :root {
   --header-height: 3.5rem;
   --hue: 152;
@@ -17,6 +18,8 @@
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
   --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
   --font-bold: 700;
   --mb-0-5: 0.5rem;
   --mb-0-75: 0.75rem;
@@ -89,6 +92,7 @@ a {
 img {
   max-width: 100%;
   height: auto;
+  border-radius: 1rem;
 }
 
 .section {
@@ -216,5 +220,86 @@ img {
 
 #nav-bar .show-menu {
   top: calc(var(--header-height) + 1rem);
+}
+
+.home {
+  padding: 3.5rem 0 2rem;
+}
+
+.home .home-container {
+  position: relative;
+  row-gap: 2rem;
+}
+
+.home .home-image {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 350px;
+}
+
+.home .home-title {
+  font-size: var(--big-font-size);
+  line-height: 140%;
+  margin-bottom: var(--mb-1);
+}
+
+.home .home-description {
+  margin-bottom: var(--mb-2-5);
+}
+
+.home .home-socials {
+  position: absolute;
+  top: 2rem;
+  right: -1rem;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  row-gap: 3.5rem;
+}
+
+.home .home-socials .home-follow-us {
+  font-size: var(--small-font-size);
+  color: var(--first-color);
+  position: relative;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.home .home-socials .home-follow-us::after {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 2px;
+  background-color: var(--first-color);
+  right: -45%;
+  top: 50%;
+}
+
+.home .home-socials .home-social-links {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 0.5rem;
+}
+
+.home .home-socials .home-social-link {
+  font-size: 1rem;
+  color: var(--first-color);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.home .home-socials .home-social-link:hover {
+  -webkit-transform: translateX(0.25rem);
+          transform: translateX(0.25rem);
 }
 /*# sourceMappingURL=styles.css.map */
