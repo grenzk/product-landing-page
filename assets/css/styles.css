@@ -87,7 +87,8 @@ a {
   text-decoration: none;
 }
 
-img {
+img,
+video {
   max-width: 100%;
   height: auto;
 }
@@ -99,6 +100,7 @@ img {
   font-size: var(--h2-font-size);
   margin-bottom: var(--mb-2);
   line-height: 140%;
+  text-align: center;
 }
 .section__title-center, .section__title-center-center {
   text-align: center;
@@ -264,6 +266,30 @@ img {
   display: inline-flex;
   align-items: center;
   column-gap: 0.5rem;
+}
+
+.video-container {
+  padding-bottom: 1rem;
+}
+
+.video-description {
+  text-align: center;
+  margin-bottom: var(--mb-2-5);
+}
+
+.video-content {
+  position: relative;
+}
+
+.video-button {
+  position: absolute;
+  left: 1rem;
+  bottom: -1rem;
+  padding: 1rem 1.5rem;
+}
+
+.video-button-icon {
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

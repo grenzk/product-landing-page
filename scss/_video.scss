@@ -1,0 +1,23 @@
+.video-container {
+  padding-bottom: 1rem;
+}
+
+.video-description {
+  text-align: center;
+  margin-bottom: var(--mb-2-5);
+}
+
+.video-content {
+  position: relative;
+}
+
+.video-button {
+  position: absolute;
+  left: 1rem;
+  bottom: -1rem;
+  padding: 1rem 1.5rem;
+}
+
+.video-button-icon {
+  font-size: 1.2rem;
+}
