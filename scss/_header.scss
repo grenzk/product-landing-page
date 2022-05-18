@@ -71,3 +71,7 @@
     top: calc(var(--header-height) + 1rem);
   }
 }
+
+.scroll-header {
+  box-shadow: 0 1px 4px hsla(var(--hue), 4%, 15%, 0.1);
+}
