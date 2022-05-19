@@ -6,6 +6,8 @@
   --first-color: hsl(28, 58%, 14%);
   --second-color: hsl(27, 33%, 29%);
   --third-color: hsl(25, 26%, 47%);
+  --fourth-color: hsl(27, 39%, 77%);
+  --fifth-color: hsl(33, 42%, 87%);
   --body-color: hsl(var(--hue), 0%, 100%);
   --title-color: hsl(var(--hue), 4%, 15%);
   --text-color: hsl(var(--hue), 4%, 35%);
@@ -344,6 +346,96 @@ video {
 
 .product-card:hover .product-img {
   transform: translateY(-0.5rem);
+}
+
+.contact-text {
+  text-align: left;
+}
+
+.background {
+  background-color: var(--fifth-color);
+}
+
+.contact-container {
+  row-gap: 3.5rem;
+}
+
+.contact-content {
+  display: grid;
+  row-gap: 2rem;
+}
+
+.contact-subtitle {
+  margin-bottom: var(--mb-0-5);
+  color: var(--second-color);
+}
+
+.contact-description {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  color: var(--title-color);
+}
+
+.contact-inputs {
+  display: grid;
+  row-gap: 2rem;
+  margin-bottom: var(--mb-2-5);
+}
+
+.contact-field {
+  position: relative;
+  height: 3rem;
+  border-bottom: 2px solid var(--text-color);
+}
+
+.contact-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 1rem 1rem 0;
+  background: none;
+  color: var(--text-color);
+  border: none;
+  outline: none;
+  z-index: 1;
+}
+
+.contact-label {
+  position: absolute;
+  top: 0.75rem;
+  width: 100%;
+  color: var(--third-color);
+  transition: 0.3s;
+}
+
+.contact-area {
+  height: 7rem;
+}
+.contact-area textarea {
+  resize: none;
+}
+
+.contact-input:focus + .contact-label {
+  top: -0.75rem;
+  font-size: var(--small-font-size);
+  z-index: 10;
+  left: 0;
+}
+
+.contact-input:not(:placeholder-shown).contact-input:not(:focus) + .contact-label {
+  top: -0.75rem;
+  font-size: var(--small-font-size);
+  z-index: 10;
+}
+
+.contact-input:placeholder-shown.contact-input:not(:focus).email-input + .contact-label {
+  top: -0.75rem;
+  font-size: var(--small-font-size);
+  z-index: 10;
+  font-size: var(--normal-font-size);
 }
 
 /*# sourceMappingURL=styles.css.map */
