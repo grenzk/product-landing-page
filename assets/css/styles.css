@@ -546,7 +546,7 @@ body.dark-theme {
     margin-top: 20%;
   }
   .home .home-image {
-    width: 450px;
+    width: 500px;
   }
   .home .home-title {
     font-size: 2.5rem;
@@ -584,7 +584,7 @@ body.dark-theme {
 @media screen and (min-width: 1200px) {
   .home .home-socials {
     top: 38%;
-    left: -60rem;
+    left: -65rem;
     row-gap: 4.5rem;
   }
   .home .home-socials .home-social-link {
