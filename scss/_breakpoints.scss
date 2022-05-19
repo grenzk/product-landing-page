@@ -42,10 +42,20 @@
     }
   }
 
-  .home-container {
+  .home-container,
+  .contact-container {
     grid-template-columns: repeat(2, 1fr);
-    align-items: center;
   }
 
-  
+  .video-container {
+    display: grid;
+    grid-template-columns: 0.6fr;
+    justify-content: center;
+  }
+
+  .product-container {
+    grid-template-columns: repeat(2, 250px);
+    justify-content: center;
+    column-gap: 5rem;
+  }
 }
