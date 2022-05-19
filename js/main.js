@@ -8,6 +8,14 @@ const iconTheme = "ri-sun-line";
 const selectedTheme = localStorage.getItem("selected-theme");
 const selectedIcon = localStorage.getItem("selected-icon");
 
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 2500,
+  delay: 400,
+  // reset: true
+});
+
 // Nav Menu
 function showMenu(toggleId, navId) {
   const toggle = document.getElementById(toggleId);
@@ -78,6 +86,16 @@ themeButton.addEventListener("click", () => {
 
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
+});
+
+// Scroll Animation
+sr.reveal(`.home-content`);
+sr.reveal(`.home-image`, { delay: 500 });
+sr.reveal(`.home-socials`, { delay: 600 });
+sr.reveal(`.video-description, .contact-box`, { origin: "left" });
+sr.reveal(`.contact-form, .video-content`, { origin: "right" });
+sr.reveal(`.product-card, .footer-logo, .footer-copy`, {
+  interval: 100,
 });
 
 showMenu("nav-toggle", "nav-menu");
