@@ -161,7 +161,9 @@ video {
   align-items: center;
   row-gap: 1.5rem;
 }
-#nav-bar .nav-link, #nav-bar .nav-logo, #nav-bar .nav-toggle {
+#nav-bar .nav-link,
+#nav-bar .nav-logo,
+#nav-bar .nav-toggle {
   color: var(--title-color);
 }
 #nav-bar .nav-logo {
