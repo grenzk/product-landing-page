@@ -80,14 +80,6 @@ if (selectedTheme) {
   );
 }
 
-themeButton.addEventListener("click", () => {
-  document.body.classList.toggle(darkTheme);
-  themeButton.classList.toggle(iconTheme);
-
-  localStorage.setItem("selected-theme", getCurrentTheme());
-  localStorage.setItem("selected-icon", getCurrentIcon());
-});
-
 // Scroll Animation
 sr.reveal(`.home-content`);
 sr.reveal(`.home-image`, { delay: 500 });
@@ -99,7 +91,16 @@ sr.reveal(`.product-card, .footer-logo, .footer-copy`, {
 });
 
 showMenu("nav-toggle", "nav-menu");
+
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 videoButton.addEventListener("click", playPause);
 videoFile.addEventListener("ended", finalVideo);
 window.addEventListener("scroll", scrollHeader);
+
+themeButton.addEventListener("click", () => {
+  document.body.classList.toggle(darkTheme);
+  themeButton.classList.toggle(iconTheme);
+
+  localStorage.setItem("selected-theme", getCurrentTheme());
+  localStorage.setItem("selected-icon", getCurrentIcon());
+});
