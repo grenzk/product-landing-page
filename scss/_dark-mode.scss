@@ -19,6 +19,18 @@ body.dark-theme {
   .footer-logo {
     color: var(--title-color);
   }
+
+  .home {
+    .home-social-link {
+      color: var(--text-color);
+    }
+  }
+
+  #nav-bar {
+    .nav-logo-icon {
+      color: var(--title-color);
+    }
+  }
 }
 
 .change-theme {

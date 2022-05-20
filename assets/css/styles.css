@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 :root {
   --header-height: 3.5rem;
   --hue: 152;
@@ -21,8 +20,6 @@
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
   --font-regular: 400;
-  --font-medium: 500;
-  --font-semi-bold: 600;
   --font-bold: 700;
   --mb-0-5: 0.5rem;
   --mb-0-75: 0.75rem;
@@ -463,6 +460,12 @@ body.dark-theme {
   color: var(--text-color);
 }
 .dark-theme .footer-logo {
+  color: var(--title-color);
+}
+.dark-theme .home .home-social-link {
+  color: var(--text-color);
+}
+.dark-theme #nav-bar .nav-logo-icon {
   color: var(--title-color);
 }
 
